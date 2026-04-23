@@ -17,7 +17,16 @@ import {
 
 const projects = [
   {
-    title: "TeamFicient Healthcare",
+  title: "FortFit Gym Página Web",
+  url: "https://www.fortfitgym.com/",
+  image: "/fortfit.png",
+  description: "Diseñé y desarrollé el sitio web completo para FortFit Gym, un gimnasio ubicado en Quito. Implementé una plataforma moderna que incluye información del gimnasio, agendamiento de citas, creación de cuentas de usuario y un mapa interactivo de las instalaciones. Construido con Next.js y Supabase, enfocado en una experiencia fluida y funcional para los usuarios.",
+  tags: ["Next.js", "Supabase", "UI/UX", "Fitness", "Web App"],
+  color: "#22c55e",
+  role: "Desarrollador Full-Stack & Diseñador UI/UX"
+  },
+  {
+    title: "TeamFicient Healthcare Pagina web",
     url: "https://health.teamficient.com/",
     image: "/tf-health.png",
     description:
