@@ -17,23 +17,13 @@ import {
 
 const projects = [
   {
-    title: "AccuSights",
-    url: "https://www.accusights.com/",
-    image: "/accusights.png",
+    title: "TeamFicient Healthcare",
+    url: "https://health.teamficient.com/",
+    image: "/tf-health.png",
     description:
-      "Plataforma de ciberseguridad y cumplimiento impulsada por IA para pequeñas y medianas empresas. Cuenta con análisis automatizado de brechas, detección de amenazas en tiempo real y soporte para más de 25 marcos de cumplimiento incluyendo HIPAA, GDPR, PCI DSS y SOC 2.",
-    tags: ["Next.js", "Django", "UI/UX", "Ciberseguridad", "SaaS"],
-    color: "#3b82f6",
-    role: "Desarrollador Full-Stack & Diseñador UI/UX",
-  },
-  {
-    title: "AccuSights UAE",
-    url: "https://uae.accusights.com/",
-    image: "/uaeaccusights.webp",
-    description:
-      "Versión regional de AccuSights diseñada específicamente para el mercado de los Emiratos Árabes Unidos (Dubái). Incluye traducción completa al árabe, adaptación cultural y soporte RTL. Desarrollé toda la interfaz de usuario utilizando Next.js, Supabase y Django.",
-    tags: ["Next.js", "Supabase", "Django", "UI/UX", "i18n", "RTL"],
-    color: "#f59e0b",
+      "Diseñé y desarrollé el sitio web completo para TeamFicient Healthcare, desde la experiencia de usuario hasta la implementación técnica. Construí el frontend con Next.js y colaboré en el backend con Django, creando una interfaz moderna y profesional orientada al sector salud.",
+    tags: ["Next.js", "Django", "UI/UX", "Salud", "Staffing"],
+    color: "#6366f1",
     role: "Desarrollador Full-Stack & Diseñador UI/UX",
   },
   {
@@ -47,19 +37,29 @@ const projects = [
     role: "Desarrollador Full-Stack & Diseñador UI/UX",
   },
   {
-    title: "TeamFicient Healthcare",
-    url: "https://health.teamficient.com/",
-    image: "/LogoTeamFicien.png",
+    title: "AccuSights",
+    url: "https://www.accusights.com/",
+    image: "/accusights.png",
     description:
-      "Diseñé y desarrollé el sitio web completo para TeamFicient Healthcare, desde la experiencia de usuario hasta la implementación técnica. Construí el frontend con Next.js y colaboré en el backend con Django, creando una interfaz moderna y profesional orientada al sector salud.",
-    tags: ["Next.js", "Django", "UI/UX", "Salud", "Staffing"],
-    color: "#6366f1",
+      "Plataforma de ciberseguridad y cumplimiento impulsada por IA para pequeñas y medianas empresas. Cuenta con análisis automatizado de brechas, detección de amenazas en tiempo real y soporte para más de 25 marcos de cumplimiento incluyendo HIPAA, GDPR, PCI DSS y SOC 2.",
+    tags: ["Next.js", "Django", "UI/UX", "Ciberseguridad", "SaaS"],
+    color: "#3b82f6",
+    role: "Desarrollador Full-Stack & Diseñador UI/UX",
+  },
+  {
+    title: "AccuSights UAE",
+    url: "https://uae.accusights.com/",
+    image: "/uae.png",
+    description:
+      "Versión regional de AccuSights diseñada específicamente para el mercado de los Emiratos Árabes Unidos (Dubái). Incluye traducción completa al árabe, adaptación cultural y soporte RTL. Desarrollé toda la interfaz de usuario utilizando Next.js, Supabase y Django.",
+    tags: ["Next.js", "Supabase", "Django", "UI/UX", "i18n", "RTL"],
+    color: "#f59e0b",
     role: "Desarrollador Full-Stack & Diseñador UI/UX",
   },
   {
     title: "DocFicient",
     url: "https://www.docficient.com/",
-    image: "/docficient-logo (1).png",
+    image: "/docficient.png",
     description:
       "Diseñé y desarrollé el sitio web de DocFicient de principio a fin. Me encargué del diseño UI/UX y la maquetación del frontend con Next.js, además de colaborar en el desarrollo del backend con Django, asegurando una experiencia de usuario fluida y profesional.",
     tags: ["Next.js", "Django", "UI/UX", "Salud", "Plataforma"],
@@ -69,6 +69,20 @@ const projects = [
 ];
 
 const experience = [
+  {
+  "company": "Ministerio de Telecomunicaciones",
+  "role": "Becario de Desarrollo Web",
+  "type": "Jornada parcial · Presencial",
+  "period": "Nov 2024 — Feb 2025",
+  "description": "Desarrollé soluciones tecnológicas enfocadas en visualización de datos y automatización. Creé dashboards interactivos para análisis de datos ministeriales, facilitando la toma de decisiones y reportes. Automaticé procesos repetitivos usando Python y macros, reduciendo tiempos de procesamiento manual y errores operativos. Inicié el desarrollo de una plataforma web con Django para el registro centralizado de entidades públicas.",
+  "skills": [
+    "SQL",
+    "Django",
+    "Python",
+    "Visualización de Datos",
+    "Automatización de Procesos"
+  ]
+},
   {
     company: "AccuSights",
     role: "Software Developer",
@@ -101,6 +115,7 @@ const experience = [
       "Consultoría Tech",
     ],
   },
+  
 ];
 
 const techStack = [
@@ -161,7 +176,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "glass border-b border-border/50 py-4"
+          ? "glass border-b border-border/50 py-6"
           : "bg-transparent py-6"
       }`}
     >
@@ -235,8 +250,8 @@ function Hero() {
           className="animate-fade-in-up mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl"
           style={{ animationDelay: "0.2s" }}
         >
-          Mi nombre es Ricardo Carrión, graduado de la Pontificia Universidad
-          Católica del Ecuador en Desarrollo de Software. Con más de 1 año de
+          Soy Ricardo Carrión, graduado de la Pontificia Universidad
+          Católica del Ecuador en Desarrollo de Software. Con casi 2 años de
           experiencia, construyo aplicaciones web modernas creando interfaces
           elegantes y backends robustos para todo tipo de negocio.
         </p>
@@ -313,12 +328,39 @@ function ProjectSection({
           inView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
         }`}
       >
-        <div
-          className={`grid items-center gap-12 ${
-            project.image ? "md:grid-cols-[1.4fr_1fr]" : ""
-          }`}
-        >
-          <div className={!isEven && project.image ? "md:order-2" : ""}>
+        {/* All projects: image left (order-1), text right (order-2) — same layout as even projects */}
+        <div className="grid items-start gap-12 md:grid-cols-[1fr_1.2fr]">
+
+          {/* Image — always on the left, slightly lower */}
+          {project.image && (
+            <div className="md:order-1 mt-8 flex items-start justify-center">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block w-full overflow-hidden rounded-2xl border border-border bg-white/5"
+              >
+                <Image
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  width={800}
+                  height={500}
+                  className="h-auto w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                  priority={index < 2}
+                />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/50">
+                  <div className="flex translate-y-3 items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-medium text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    Visitar Sitio
+                    <ArrowUpRight size={15} />
+                  </div>
+                </div>
+              </a>
+            </div>
+          )}
+
+          {/* Text — always on the right */}
+          <div className="md:order-2">
             {/* Color accent bar */}
             <div
               className="mb-10 h-1 w-20 rounded-full"
@@ -366,20 +408,6 @@ function ProjectSection({
               />
             </a>
           </div>
-
-          {project.image && (
-            <div className={`${!isEven ? "md:order-1" : ""} flex items-center justify-center`}>
-              <div className="flex max-w-xs items-center justify-center overflow-hidden rounded-2xl border border-border bg-white/5 p-4">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} preview`}
-                  width={350}
-                  height={220}
-                  className="h-auto max-h-[200px] w-auto object-contain"
-                />
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>
